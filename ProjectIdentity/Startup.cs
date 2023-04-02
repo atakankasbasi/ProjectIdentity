@@ -61,7 +61,7 @@ namespace ProjectIdentity
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=MainPage}/{action=_AdminLayout}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
