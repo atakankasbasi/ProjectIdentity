@@ -2,11 +2,12 @@
 
 namespace ProjectIdentity.Controllers
 {
-    public class MessageController : Controller
+    public class DefaultController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
+
     }
 }
