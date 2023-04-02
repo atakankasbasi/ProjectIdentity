@@ -14,35 +14,14 @@
 
     <div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
 
-        @await Html.PartialAsync("~/Views/Default/PartialView/TopBarPartialView.cshtml")
 
 
-        <div class="container-fluid py-4">
-            <div class="row">
-
-                @await Html.PartialAsync("~/Views/Default/PartialView/BildirimPartialView.cshtml")
-
-                @await Html.PartialAsync("~/Views/Default/PartialView/OnYaziPartialView.cshtml")
-
-                @await Html.PartialAsync("~/Views/Default/PartialView/SonMailPartialView.cshtml")
-
-                @await Html.PartialAsync("~/Views/Default/PartialView/HaberlerPartialView.cshtml")
-
-                @await Html.PartialAsync("~/Views/Default/PartialView/ListemPartialView.cshtml")
+        @RenderBody()
+      
 
 
-                <div class="col-12 mt-4 pt-2 ">
 
-                    <div class="row removable">
 
-                        @await Html.PartialAsync("~/Views/Default/PartialView/BitcoinPartialView.cshtml")
-                        @await Html.PartialAsync("~/Views/Default/PartialView/SonIslemlerPartialView.cshtml")
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
 
     @await Html.PartialAsync("~/Views/Default/PartialView/ScriptPartialView.cshtml")
@@ -50,4 +29,3 @@
 
 </html>
 
-@RenderBody()

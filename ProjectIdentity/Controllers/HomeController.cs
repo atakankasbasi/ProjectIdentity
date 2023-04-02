@@ -16,11 +16,5 @@ namespace ProjectIdentity.Controllers
             return View();
         }
 
-
-        public IActionResult TEST(int code)
-        {
-            return View();
-        }
-
     }
 }
