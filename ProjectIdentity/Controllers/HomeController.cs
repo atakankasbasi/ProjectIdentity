@@ -19,6 +19,10 @@ namespace ProjectIdentity.Controllers
         {
             return View();
         }
+        public IActionResult HaberIndex()
+        {
+            return View();
+        }
 
     }
 }
