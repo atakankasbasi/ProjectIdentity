@@ -70,25 +70,62 @@
                 <div class="card-footer p-4 pt-1 pb-2 d-flex justify-content-end">
 
                     <div class="mailbox-controls ">
-
-                        <button class="btn btn-icon mb-4 btn-primary" type="button">
-                            <i class="far fa-square"></i>
+                        <button type="button" class="btn bg-gradient-warning mb-4" style="margin-right:0.5rem">
+                            <i class="fas fa-pencil-alt" style="margin-right:0.5rem"></i>Yanıtla
                         </button>
 
-                        <button class="btn btn-icon mb-4 btn-secondary mr-5" type="button">
-                            <i class="far fa-trash-alt"></i>
+
+
+                        <button type="button" class="btn bg-gradient-secondary mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right:0.5rem">
+                            <i class="far fa-envelope" style="margin-right:0.5rem"></i>GÖNDER
                         </button>
 
-                        <button class="btn btn-icon mb-4 btn-success" type="button">
-                            <i class="fas fa-reply"></i>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Mail Gönderilsin Mi ?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">İPTAL</button>
+                                        <button type="submit" class="btn bg-gradient-primary">GÖNDER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <button type="button" class="btn bg-gradient-danger mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="margin-right:0.5rem">
+                            <i class="far fa-pencil-alt" style="margin-right:0.5rem"></i>SİL
                         </button>
 
-                        <button class="btn btn-icon mb-4 btn-warning" type="button">
-                            <i class="fas fa-share"></i>
-                        </button>
-                    </div>
-                </div>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1">Silmek İstediğinizden Emin Misiniz ?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">İPTAL</button>
+                                        <button type="submit" class="btn bg-gradient-primary">SİL</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>  
+                </div><br/>
             </div>
         </div>
-    </div>
+
+    </div><br /><br /><br /><br />
 </div>
