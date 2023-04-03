@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+ @await Html.PartialAsync("~/Views/Home/PartialView/HeadPartialView.cshtml")
+
+<body class="g-sidenav-show">
+
+      @await Html.PartialAsync("~/Views/Home/PartialView/SidebarPartialView.cshtml")
+    
+      <div class="main-content" id="panel">
+
+     @await Html.PartialAsync("~/Views/Home/PartialView/TopNavbarPartialView.cshtml")
+
+       @await Html.PartialAsync("~/Views/Home/PartialView/TopSliderPartialView.cshtml")
+
+
+
+       @await Html.PartialAsync("~/Views/Home/PartialView/NavbarPartialView.cshtml")
+   
+     
+         @await Html.PartialAsync("~/Views/Home/PartialView/ProjectPartialView.cshtml")
+
+            
+
+        </div>
+
+    </div>
+    @await Html.PartialAsync("~/Views/Home/PartialView/ScriptPartialView.cshtml")
+</body>
+
+    @RenderBody();
