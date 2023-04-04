@@ -27,7 +27,7 @@ namespace ProjectIdentity.Controllers
             var result = await _signInManager.PasswordSignInAsync(loginViewModel.Username, loginViewModel.Password, false, true);
             if (result.Succeeded)
             {
-                return RedirectToAction("_AdminLayout", "MainPage");
+                return RedirectToAction("Index", "Default");
             }
             else
             {
