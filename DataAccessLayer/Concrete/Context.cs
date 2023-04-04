@@ -19,3 +19,4 @@ namespace DataAccessLayer.Concrete
         public DbSet<Message> Messages { get; set; }
     }
 }
+
