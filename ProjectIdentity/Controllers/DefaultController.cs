@@ -23,6 +23,9 @@ namespace ProjectIdentity.Controllers
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             UserEditViewModel userEditViewModel = new UserEditViewModel();
+            ViewBag.name = values.Name;
+            ViewBag.surname = values.Surname;
+            ViewBag.Mail = values.Email;
             userEditViewModel.Name = values.Name;
             userEditViewModel.Surname = values.Surname;
             userEditViewModel.Mail = values.Email;

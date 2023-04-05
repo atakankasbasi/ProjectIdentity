@@ -15,14 +15,14 @@
         </div>
         <div class="card-body p-3 pb-1">
             <p class="text-sm">
-                Hi, I’m @Model.Name, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+                Hi, I’m @ViewBag.name, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
             </p>
             <hr class="horizontal gray-light my-4">
             <ul class="list-group">
-                <li class="list-group-item border-0 ps-0 pt-0 text-sm mb-2"><strong class="text-dark">Kullanıcı Adı</strong> &nbsp; @Model.Name @Model.Surname</li>
+                <li class="list-group-item border-0 ps-0 pt-0 text-sm mb-2"><strong class="text-dark">Kullanıcı Adı</strong> &nbsp; @ViewBag.name  @ViewBag.surname</li>
                 <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Ünvan</strong> &nbsp; Jr.Software Developer</li>
                 <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Telefon:</strong> &nbsp; (507) 123 44 12</li>
-                <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mail:</strong> &nbsp; @Model.Mail</li>
+                <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mail:</strong> &nbsp; @ViewBag.Mail</li>
                 <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Lokasyon:</strong> &nbsp; TÜRKİYE</li>
                 <li class="list-group-item border-0 ps-0 pb-0">
                     <strong class="text-dark text-sm">Sosyal Medya:</strong> &nbsp;
