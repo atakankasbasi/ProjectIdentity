@@ -18,6 +18,7 @@ namespace ProjectIdentity.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
@@ -28,5 +29,32 @@ namespace ProjectIdentity.Controllers
             userEditViewModel.Phone = values.PhoneNumber;
             return View(userEditViewModel);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> EditIndex()
+        {
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            UserEditViewModel userEditViewModel = new UserEditViewModel();
+            userEditViewModel.Name = values.Name;
+            userEditViewModel.Surname = values.Surname;
+            userEditViewModel.Mail = values.Email;
+            userEditViewModel.Phone = values.PhoneNumber;
+            return View(userEditViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditIndex(UserEditViewModel userEditViewModel)
+        {
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            values.Name = userEditViewModel.Name;
+            values.Surname=userEditViewModel.Surname;
+            values.PhoneNumber = userEditViewModel.Phone;
+            values.Email = userEditViewModel.Mail;
+            await _userManager.UpdateAsync(values);
+            return View();
+
+        }
+
+
     }
 }

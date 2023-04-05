@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "EditIndex";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+@await Html.PartialAsync("~/Views/Default/PartialView/TopBarPartialView.cshtml")
+
+
+<div class="container-fluid py-4">
+    <div class="row">
+
+
+
+        @await Html.PartialAsync("~/Views/Default/PartialView/AyarlarPartialView.cshtml")
+
+        @await Html.PartialAsync("~/Views/Default/PartialView/OnYaziPartialView.cshtml")
+
+        @await Html.PartialAsync("~/Views/Default/PartialView/SonMailPartialView.cshtml")
+
+        @await Html.PartialAsync("~/Views/Default/PartialView/HaberlerPartialView.cshtml")
+
+        @await Html.PartialAsync("~/Views/Default/PartialView/ListemPartialView.cshtml")
+
+
+        <div class="col-12 mt-4 pt-2 ">
+
+            <div class="row removable">
+
+                @await Html.PartialAsync("~/Views/Default/PartialView/BitcoinPartialView.cshtml")
+                @await Html.PartialAsync("~/Views/Default/PartialView/SonIslemlerPartialView.cshtml")
+
+            </div>
+
+        </div>
+    </div>
+</div>
