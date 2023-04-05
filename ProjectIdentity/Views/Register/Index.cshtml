@@ -6,11 +6,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@await Html.PartialAsync("HeaderPartialView.cshtml")
+@await Html.PartialAsync("~/Views/Register/PartialView/HeaderPartialView.cshtml")
 
 <body class="g-sidenav-show  bg-gray-100">
 
-    @await Html.PartialAsync("NavbarPartialView.cshtml")
+    @await Html.PartialAsync("~/Views/Register/PartialView/NavbarPartialView.cshtml")
 
     <section class="min-vh-100 mb-8">
         <div class="page-header align-items-start min-vh-20 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('/User/assets/img/curved-images/curved14.jpg');">
@@ -29,9 +29,9 @@
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
                     <div class="card z-index-0">
 
-                        @await Html.PartialAsync("TopPartialView.cshtml")
+                        @await Html.PartialAsync("~/Views/Register/PartialView/TopPartialView.cshtml")
 
-                        @await Html.PartialAsync("FormPartialView.cshtml")
+                        @await Html.PartialAsync("~/Views/Register/PartialView/FormPartialView.cshtml")
 
                     </div>
                 </div>
@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    @await Html.PartialAsync("ScriptPartialView.cshtml")
+    @await Html.PartialAsync("~/Views/Register/PartialView/ScriptPartialView.cshtml")
 
 </body>
 
