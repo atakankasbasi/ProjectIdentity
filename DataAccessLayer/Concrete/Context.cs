@@ -13,8 +13,8 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //(localdb)\\MSSQLLocalDB    
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; initial catalog=IdentityDB;integrated security=true");
+            //(localdb)\\MSSQLLocalDB      //MUHAMMET\\SQLEXPRESS
+            optionsBuilder.UseSqlServer("Server=MUHAMMET\\SQLEXPRESS; initial catalog=IdentityDB;integrated security=true");
         }
         public DbSet<Message> Messages { get; set; }
     }
